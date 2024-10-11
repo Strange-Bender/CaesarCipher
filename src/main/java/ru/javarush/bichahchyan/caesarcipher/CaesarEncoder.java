@@ -4,10 +4,10 @@ import java.io.*;
 import java.nio.file.Path;
 import java.util.*;
 
-public class Encoder {
+public class CaesarEncoder {
     public List<Character> alphabet;
     public Set<String> dictionary;
-    public Encoder(List<Character> alphabet){
+    public CaesarEncoder(List<Character> alphabet){
         this.alphabet = alphabet;
     }
 
