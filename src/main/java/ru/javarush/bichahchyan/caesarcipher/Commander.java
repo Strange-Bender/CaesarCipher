@@ -72,7 +72,7 @@ public class Commander {
     public static void brutForceCommand(){
 
         CaesarEncoder cezarShiphor = new CaesarEncoder(Alphabets.RUS_ALPHABET);
-        cezarShiphor.setDictionary("C:\\Users\\Bender\\IdeaProjects\\EcryptionTest\\src\\dictionary.txt");
+        cezarShiphor.setDictionary("C:\\Users\\Bender\\IdeaProjects\\CaesarCipher\\src\\main\\java\\ru\\javarush\\bichahchyan\\caesarcipher\\Constans\\dictionary.txt");
         Set<String> dictionary = cezarShiphor.getDictionary();
 
         Path inFile = ConsoleManager.getInnerPathFromConsole();
@@ -93,8 +93,8 @@ public class Commander {
                 System.out.print(i + " ");
             }
         }
-        cezarShiphor.decryptFile(inFile,Paths.get("C:\\Users\\Bender\\IdeaProjects\\EcryptionTest\\src\\BrutForceRes.txt"),bestKey);
-        System.out.println("\n рузультат BrutForce лежит в файлу: C:\\Users\\Bender\\IdeaProjects\\EcryptionTest\\src\\BrutForceRes.txt");
+        cezarShiphor.decryptFile(inFile,Paths.get("C:\\Users\\Bender\\IdeaProjects\\CaesarCipher\\src\\main\\java\\ru\\javarush\\bichahchyan\\caesarcipher\\TextFiles\\BrutForceRes.txt"),bestKey);
+        System.out.println("\n рузультат BrutForce лежит в файлу: C:\\Users\\Bender\\IdeaProjects\\CaesarCipher\\src\\main\\java\\ru\\javarush\\bichahchyan\\caesarcipher\\TextFiles\\BrutForceRes.txt");
 
 
 
