@@ -76,6 +76,7 @@ public class Commander {
         Set<String> dictionary = cezarShiphor.getDictionary();
 
         Path inFile = ConsoleManager.getInnerPathFromConsole();
+        Path outFile = ConsoleManager.getOutPathFromConsole();
         int size = cezarShiphor.getAlphabetSize();
         int[] masCounter = new int[size];
         int maxIdentity = 0;
@@ -93,8 +94,8 @@ public class Commander {
                 System.out.print(i + " ");
             }
         }
-        cezarShiphor.decryptFile(inFile,Paths.get("C:\\Users\\Bender\\IdeaProjects\\CaesarCipher\\src\\main\\java\\ru\\javarush\\bichahchyan\\caesarcipher\\TextFiles\\BrutForceRes.txt"),bestKey);
-        System.out.println("\n рузультат BrutForce лежит в файлу: C:\\Users\\Bender\\IdeaProjects\\CaesarCipher\\src\\main\\java\\ru\\javarush\\bichahchyan\\caesarcipher\\TextFiles\\BrutForceRes.txt");
+        cezarShiphor.decryptFile(inFile,outFile,bestKey);
+        System.out.println("\n рузультат BrutForce лежит в файлу: " + outFile.toString());
 
 
 
